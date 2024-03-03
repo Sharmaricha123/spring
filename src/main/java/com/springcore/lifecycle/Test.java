@@ -15,8 +15,11 @@ public class Test {
 		context.registerShutdownHook();
 		
 		
-		Bird bird1=(Bird)context.getBean("bird1");
-		System.out.println();
+//		Bird bird1=(Bird)context.getBean("bird1");
+//		System.out.println();
+		
+		ExampleAnnotation example1=(ExampleAnnotation)context.getBean("example1");
+		System.out.println(example1);
 	}
 
 }
